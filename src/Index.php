@@ -25,7 +25,8 @@ class Index
     if ($response->code != 200) {
       return json_encode([
         'code' => $response->code,
-        'status' => 'There is an error on the server',
+        'status' => 'failed',
+        'message' => 'There is an error on the server'
       ]);
     }
 
@@ -50,8 +51,9 @@ class Index
     if ($response->code != 200) {
       return json_encode([
         'code' => $response->code,
-        'status' => 'There is an error on the server',
-      ]);
+        'status' => 'failed',
+        'message' => 'There is an error on the server'
+      ], JSON_PRETTY_PRINT);
     }
 
     $result = [
@@ -80,7 +82,7 @@ class Index
         'code' => $response->code,
         'status' => 'failed',
         'message' => 'There is an error on the server'
-      ]);
+      ], JSON_PRETTY_PRINT);
     }
 
     $result = [
@@ -109,7 +111,7 @@ class Index
         'code' => $response->code,
         'status' => 'failed',
         'message' => 'There is an error on the server'
-      ]);
+      ], JSON_PRETTY_PRINT);
     }
 
     $result = [
@@ -134,7 +136,7 @@ class Index
       return json_encode([
         'code' => $response->code,
         'status' => 'There is an error on the server',
-      ]);
+      ], JSON_PRETTY_PRINT);
     }
 
     $result = [
