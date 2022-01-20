@@ -1,0 +1,22 @@
+{
+  "name": "testing/jwalbli",
+  "description": "Testing Jwalbli",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Muhamad Faisal I A",
+      "email": "faisal.ilhami2797@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"App\\": "src/"}
+  },
+  "require": {
+    "mashape/unirest-php": "3.*",
+    "phpunit/phpunit": "^9.5",
+    "guzzlehttp/guzzle": "^7.4",
+    "ext-json": "*"
+  }
+}
